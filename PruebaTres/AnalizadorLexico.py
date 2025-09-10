@@ -42,7 +42,7 @@ class AutomataCadena:
         comilla = linea[pos]
         lexema, i = comilla, pos+1
         while i < len(linea):
-            if linea[i] == '\\': # escape
+            if linea[i] == '\\': 
                 lexema += linea[i]
                 if i+1 < len(linea):
                     lexema += linea[i+1]
@@ -53,7 +53,7 @@ class AutomataCadena:
                 return ('tk_cadena', lexema, i+1-pos)
             lexema += linea[i]
             i += 1
-        return None # no cerrada
+        return None 
 
 class AutomataEntero:
     def match(self, linea, pos):
@@ -125,6 +125,7 @@ class AnalizadorLexico:
                     self.escribir(token)
                     i += longi; break
             else:
+                self.escribir(f'>//>//> error lexico(linea:{num_linea},posicion:{i+1})')
                 print(f'>//>//> error lexico(linea:{num_linea},posicion:{i+1})')
                 return
 
