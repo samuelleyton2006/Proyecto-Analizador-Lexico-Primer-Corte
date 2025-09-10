@@ -1,0 +1,3 @@
+<id,ano,1,1>
+<tk_asig,=,1,4>
+<tk_cadena,"año",1,5>
