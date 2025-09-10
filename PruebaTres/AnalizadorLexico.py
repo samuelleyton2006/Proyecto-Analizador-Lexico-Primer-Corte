@@ -17,12 +17,12 @@ OPERADORES_SIMPLES = {
     ')': 'tk_par_der', '{': 'tk_llave_izq', '}': 'tk_llave_der', '[': 'tk_corchete_izq',
     ']': 'tk_corchete_der', '<': 'tk_menor', '>': 'tk_mayor'
 }
-def es_letra(cadena: str)-> bool:
+def es_letra(cadena: str)-> bool: # Esto dectecta letras ASCII
     if len(cadena)==0:
         return False
     return ('a' <= cadena <= 'z') or ('A' <= cadena <= 'Z')
 
-def es_digito(cadena: str)-> bool:
+def es_digito(cadena: str)-> bool: # Esto detecta numeros
     if len(cadena)==0:
         return False
     return '0' <= cadena <= '9'
