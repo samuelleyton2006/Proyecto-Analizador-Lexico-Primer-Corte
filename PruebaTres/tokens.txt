@@ -1,7 +1,1 @@
-<if,if,1,1>
-<id,a,1,4>
-<tk_menor,<,1,6>
-<id,b,1,8>
-<tk_dos_puntos,:,1,9>
->//>//> error lexico(linea:2,posicion:5)
->//>//> error lexico(linea:3,posicion:5)
+>//>//> error lexico(linea:1,posicion:1)
