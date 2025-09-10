@@ -8,8 +8,10 @@ PALABRAS_RESERVADAS = {
 
 OPERADORES_DOBLES = {
     '->': 'tk_flecha', '<=': 'tk_menor_igual', '>=': 'tk_mayor_igual',
-    '==': 'tk_igual_igual', '!=': 'tk_distinto'
+    '==': 'tk_igual_igual', '!=': 'tk_distinto', '&&': 'tk_and', '||': 'tk_or',
+    '++': 'tk_incremento', '--': 'tk_decremento', '//': 'tk_div_entera', '**': 'tk_potencia'
 }
+
 
 OPERADORES_SIMPLES = {
     ':': 'tk_dos_puntos', ',': 'tk_coma', '.': 'tk_punto', '=': 'tk_asig', '+': 'tk_suma',
