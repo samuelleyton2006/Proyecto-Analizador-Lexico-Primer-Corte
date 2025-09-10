@@ -33,7 +33,7 @@ def es_alfnum(cadena: str)-> bool:
     return es_letra(cadena) or es_digito(cadena)
 
 def es_blanco(cadena: str)-> bool:
-    return cadena in [' ', '\t', '\n', '\r', '\v', '\f']
+    return cadena in [' ', '\t', '\n']
 
 
 class AutomataCadena:
